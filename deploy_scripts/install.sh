@@ -1,6 +1,6 @@
 #!/bin/bash
 source /home/ec2-user/.bash_profile
-cd /home/ec2-user
+cd /var/www/html
 node --version
 if [ $? -ne 0 ]
 then
@@ -8,3 +8,6 @@ then
    . ~/.nvm/nvm.sh
    nvm install 4.3.2
 fi
+
+file="/var/www/html/index.html"
+[ -f $file ] && rm $file
