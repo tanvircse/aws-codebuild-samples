@@ -8,6 +8,6 @@ then
    . ~/.nvm/nvm.sh
    nvm install 4.3.2
 fi
-
+#test
 file="/var/www/html/index.html"
 [ -f $file ] && rm $file
