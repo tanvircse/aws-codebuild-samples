@@ -10,4 +10,5 @@ then
 fi
 #test
 file="/var/www/html/index.html"
+chmod 777 $file
 [ -f $file ] && rm $file
